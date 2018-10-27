@@ -3,6 +3,7 @@ import addQueryResolvers from './graphql.resolvers.queries.js';
 
 import usersResolvers from '../users/users.resolvers.js';
 import apartmentsResolvers from '../apartments/apartments.resolvers.js';
+import locationsResolvers from'../locations/locations.resolvers.js';
 
 export default function () {
   const app = this;
@@ -28,5 +29,6 @@ export default function () {
     rootResolvers,
     apartmentsResolvers(Users, Locations),
     usersResolvers(Profiles),
+    locationsResolvers(Countries)
   );
 }

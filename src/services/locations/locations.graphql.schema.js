@@ -8,6 +8,7 @@ export default [
   type Locations {
     _id: String!
     title: String
+    country: Countries
   }
 `,
 ];

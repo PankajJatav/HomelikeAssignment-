@@ -33,7 +33,7 @@ After you found out how this happens, please describe the reason and how you fou
     }
 ```  
 
-#### My Solutation for last problem:
+### My Solutation for last problem:
 
 These are the following step I took to figure out the issue
 
@@ -56,3 +56,5 @@ Here are the list of solution:
 - Overwrite the [`feathers-mongodb`](https://github.com/feathersjs-ecosystem/feathers-mongodb) package file. Then you can't get new update of a package and you have to manage that library all time.
 
 I selected to update the query because it was easy and more convenient which you can check [`here`](https://github.com/PankajJatav/HomelikeAssignment-/blob/master/src/services/apartments/apartments.resolvers.js#L10)
+
+#### Live link: https://morning-springs-48679.herokuapp.com/graphiql

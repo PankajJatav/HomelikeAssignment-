@@ -2,5 +2,5 @@
   "host": "localhost",
   "port": 5000,
   "public": "../public/",
-  "mongodb": "mongodb://localhost:27017/assignment"
+  "mongodb": "mongodb://pankaj:qwe123@ds143593.mlab.com:43593/homelike_assignment"
 }

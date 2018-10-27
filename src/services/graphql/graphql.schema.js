@@ -1,6 +1,7 @@
 import locationsSchema from '../locations/locations.graphql.schema.js';
 import apartmentsSchema from '../apartments/apartments.graphql.schema.js';
 import usersSchema from '../users/users.graphql.schema.js';
+import countrySchema from '../countries/countries.graphql.schema.js';
 
 const rootSchema = [
   `
@@ -13,6 +14,10 @@ const rootSchema = [
     
     location(_id: String): Locations
     locations(active: Boolean limit: Int skip: Int): LocationsWithPagination
+
+    country(_id: String): Locations
+    countries(limit: Int skip: Int): CountriesWithPagination
+
   }
 
   type Mutation {
@@ -30,5 +35,6 @@ export default [
   ...rootSchema,
   ...locationsSchema,
   ...apartmentsSchema,
+  ...countrySchema,
   ...usersSchema,
 ];

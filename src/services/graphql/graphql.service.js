@@ -33,5 +33,8 @@ module.exports = function () {
     };
   }));
 
-  app.get('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
+  app.get('/graphiql', graphiqlExpress({ 
+    endpointURL: '/graphql',
+    graphiql: true
+  }));
 };
